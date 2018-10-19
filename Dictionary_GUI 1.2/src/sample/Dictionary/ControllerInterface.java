@@ -2,19 +2,16 @@ package sample.Dictionary;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.collections.transformation.FilteredList;
+
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
@@ -22,39 +19,34 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import sample.Sql.ConnectionDatabase;
-
 public class ControllerInterface extends ControllerGeneral implements Initializable {
     @FXML
-    ListView listview;
+   private ListView<String> listview;
     @FXML
-    ObservableList<String> obserlist = FXCollections.observableArrayList();
-    @FXML
-    FilteredList<String> filteredData = new FilteredList<>(obserlist, e -> true);
-    @FXML
-    TextField search ;
-
+   private WebEngine webEngine;
     @FXML
     private WebView webview;
-    private WebEngine webEngine;
-    private ResultSet result;
-    private PreparedStatement preparedStatement = null;
+    @FXML
+    private  TextField search ;
+
     @FXML
     public void showListView(){
         try {
-            Statement stm = ConnectionDatabase.getConnection().createStatement();
-            result = stm.executeQuery("select word from av");
+            Statement stm = connection.prepareStatement("select word from av");
+            result = ((PreparedStatement) stm).executeQuery();
             while (result.next()) {
 
-                obserlist.add( result.getString(1));
+                observablelist.add( result.getString(1));
             }
         }catch ( SQLException ex) {
             Logger.getLogger(ControllerInterface.class.getName()).log(Level.SEVERE, null, ex);
         }
-        listview.setItems(obserlist);
+        listview.setItems(observablelist);
     }
     @FXML
     public void filterWord(){
@@ -95,7 +87,43 @@ public class ControllerInterface extends ControllerGeneral implements Initializa
             }
         });
     }
+    private void handleSelectEvent() {
+        listview.setOnMouseClicked(e -> {
+            getSelectedList();
+        });
 
+        listview.setOnKeyPressed(e -> {
+            KeyCode keyCode = e.getCode();
+            if (keyCode == KeyCode.ENTER) {// error
+                getSelectedList();
+            }
+        });
+    }
+    //Speak
+    public void TextToSpeak(){
+        String Text = listview.getSelectionModel().getSelectedItem();
+        TextToSpeak.playSound(Text);
+    }
+    public void clickEditWord(ActionEvent e) throws IOException {
+        Stage stage = (Stage)((Node) e.getSource()).getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("../Fxml/htmlEditor.fxml"));
+        Parent SceneChange = loader.load();
+        Scene scene = new Scene(SceneChange);
+
+        ControllerEditor controllerEditor = loader.getController();
+        if(listview.getSelectionModel().getSelectedItem() != null){
+            controllerEditor.setWord(listview.getSelectionModel().getSelectedItem());
+            stage.setScene(scene);
+        }
+        else{
+            showAlert.AlertInfo("Please choose a word which you want to edit!!");
+        }
+    }
+    @FXML
+    void handleDeleteEvent() {
+        deleteWord(listview, webEngine);
+    }
     public void clickGoogleTranslate(ActionEvent e) throws IOException {
         changeScene(e,"../Fxml/GoogleTranslate.fxml");
     }
@@ -106,7 +134,6 @@ public class ControllerInterface extends ControllerGeneral implements Initializa
     public void initialize(URL url, ResourceBundle rb) {
         webEngine = webview.getEngine();
         showListView();
-    //    getSelectedList();
-    }
+        handleSelectEvent();    }
 
 }

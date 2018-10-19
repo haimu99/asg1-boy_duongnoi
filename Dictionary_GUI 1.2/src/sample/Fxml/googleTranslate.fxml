@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dictionary.ControllerGoogleTranslate">
    <children>
-      <Label layoutX="141.0" layoutY="137.0" text="Google Translate" textFill="#e91b1b">
+      <Label layoutX="166.0" layoutY="27.0" text="Google Translate" textFill="#e91b1b">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
       <Button layoutX="74.0" layoutY="54.0" mnemonicParsing="false" onAction="#clickBackHome" text="Home" />
+      <ComboBox fx:id="searchLanguage" layoutX="62.0" layoutY="109.0" onAction="#chooseSearchLanguage" prefWidth="150.0" promptText="Language" />
+      <ComboBox fx:id="explainLanguage" layoutX="301.0" layoutY="109.0" onAction="#choooseTargetLanguage" prefWidth="150.0" promptText="Language" />
    </children>
 </AnchorPane>
