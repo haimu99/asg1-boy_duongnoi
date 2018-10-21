@@ -8,25 +8,60 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dictionary.ControllerInterface">
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="606.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dictionary.ControllerInterface">
    <children>
-      <ImageView fitHeight="110.0" fitWidth="231.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="110.0" fitWidth="205.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/43701051_330751820833698_6885780436115521536_n.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="102.0" fitWidth="337.0" layoutX="267.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="120.0" fitWidth="368.0" layoutX="224.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/43412299_308694663059179_3969036165075435520_n.png" />
          </image>
       </ImageView>
-      <TextField fx:id="search" layoutX="14.0" layoutY="128.0" onKeyTyped="#filterWord" onMouseClicked="#filterWord" prefHeight="35.0" prefWidth="214.0" promptText="search" />
-      <ListView fx:id="listview" layoutX="21.0" layoutY="186.0" onMouseClicked="#getSelectedList" prefHeight="200.0" prefWidth="200.0" />
-      <WebView fx:id="webview" layoutX="267.0" layoutY="175.0" prefHeight="200.0" prefWidth="320.0" />
-      <Button layoutX="239.0" layoutY="133.0" mnemonicParsing="false" onAction="#clickGoogleTranslate" prefHeight="25.0" prefWidth="94.0" text="google sub" />
-      <Button layoutX="473.0" layoutY="133.0" mnemonicParsing="false" onAction="#clickAddWord" text="add word" />
-      <Button layoutX="403.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#handleDeleteEvent" text="delete" />
-      <Button layoutX="540.0" layoutY="133.0" mnemonicParsing="false" onAction="#TextToSpeak" text="speak" />
-      <Button layoutX="351.0" layoutY="133.0" mnemonicParsing="false" onAction="#clickEditWord" text="Edit" />
+      <TextField fx:id="search" layoutX="14.0" layoutY="131.0" onKeyTyped="#filterWord" onMouseClicked="#filterWord" prefHeight="29.0" prefWidth="205.0" promptText="search" />
+      <ListView fx:id="listview" layoutX="14.0" layoutY="182.0" onMouseClicked="#getSelectedList" prefHeight="323.0" prefWidth="205.0" />
+      <WebView fx:id="webview" layoutX="263.0" layoutY="182.0" prefHeight="323.0" prefWidth="328.0" />
+      <Button layoutX="475.0" layoutY="125.0" mnemonicParsing="false" onAction="#clickGoogleTranslate" prefHeight="31.0" prefWidth="77.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/googleTraslate.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="370.0" layoutY="125.0" mnemonicParsing="false" onAction="#clickAddWord" prefHeight="28.0" prefWidth="39.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="425.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#handleDeleteEvent" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/delete.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="251.0" layoutY="125.0" mnemonicParsing="false" onAction="#TextToSpeak" prefHeight="35.0" prefWidth="56.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/speaker.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="310.0" layoutY="125.0" mnemonicParsing="false" onAction="#clickEditWord" prefHeight="41.0" prefWidth="49.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/note.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
    </children>
 </AnchorPane>

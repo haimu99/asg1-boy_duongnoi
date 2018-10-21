@@ -12,5 +12,6 @@
     <orderEntry type="library" name="sqlite-jdbc-3.23.1" level="project" />
     <orderEntry type="library" name="apiGoogle" level="project" />
     <orderEntry type="library" name="jl1.0" level="project" />
+    <orderEntry type="library" name="java-flac-encoder-0.3.7" level="project" />
   </component>
 </module>
