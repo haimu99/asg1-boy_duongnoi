@@ -1,98 +1,185 @@
 ﻿absolutely	tuyệt đối
 adequate	đầy, đầy đủ
+
 adequately	tương xứng, thỏa đáng
+
 adjust	sửa lại cho đúng, điều chỉnh
+
 admiration	sự khâm phục,người kp, thán phục
+
 admire	khâm phục, thán phục
+
 admit	nhận vào, cho vào, kết hợp
+
 adopt	nhận làm con nuôi, bố mẹ nuôi
+
 adult	người lớn, người trưởng thành; trưởng thành
+
 advance	sự tiến bộ, tiến lên; đưa lên, đề xuất
+
 advanced	tiên tiến, tiến bộ, cấp cao
+
 advantage	sự thuận lợi, lợi ích, lợi thế
+
 atmosphere	khí quyển
 atom	nguyên tử
+
 attach	gắn, dán, trói, buộc
+
 attached	gắn bó
+
 attack	sự tấn công, sự công kích; tấn công, công kích
+
 back	lưng, về phía sau, trở lại
+
 background	phía sau; nền
+
 backward	về phía sau, lùi lại
+
 bacteria	vi khuẩn
+
 bad	xấu, tồi
+
 bad-tempered	xấu tính, dễ nổi cáu
+
 badly	xấu, tồi
+
 bag	bao, túi, cặp xách
+
 bargain	sự mặc cả, sự giao kèo mua bán
+
 barrier	đặt chướng ngại vật
+
 beach	bãi biển
+
 beef	thịt bò
+
 beer	rượu bia
+
 before	trước, đằng trước
+
 begin	bắt đầu, khởi đầu
+
 behalf	sự thay mặt
+
 behave	đối xử, ăn ở, cư xử
+
 behind	sau, ở đằng sau
+
 belief	lòng tin, đức tin, sự tin tưởng
+
 believe	tin, tin tưởng
+
 bell	cái chuông, tiếng chuông
+
 belong	thuộc về, của, thuộc quyền sở hữu
+
 below	ở dưới, dưới thấp, phía dưới
+
 belt	dây lưng, thắt lưng
+
 cabinet	tủ có nhiều ngăn đựng đồ
+
 cable	dây cáp
+
 cake	bánh ngọt
+
 calculate	tính toán
+
 call	gọi; tiếng kêu, tiếng gọi
+
 calm	yên lặng, làm dịu đi; sự yên lặng, sự êm ả
+
 calmly	yên lặng, êm ả; bình tĩnh, điềm tĩnh
+
 camera	máy ảnh
+
 camp	trại, chỗ cắm trại; cắm trại, hạ trại
+
 camping	sự cắm trại
+
 cancel	hủy bỏ, xóa bỏ
+
 cancer	bệnh ung thư
+
 candy	kẹo
+
 cannot	không thể
+
 car	xe hơi
+
 card	thẻ, thiếp
+
 care	quan tâm
+
 career	nghề nghiệp, sự nghiệp
+
 carefully	cẩn thận, chu đáo
+
 carry	mang, vác, khuân chở
+
 case	vỏ, ngăn, túi
+
 cast	quăng, ném, thả, đánh gục; sự quăng, sự ném
+
 cat	con mèo
+
 dark	tối, tối tăm; bóng tối, ám muội
+
 data	số liệu, dữ liệu
+
 date	ngày, kỳ, kỳ hạn, thời kỳ, thời đại
+
 daughter	con gái
 day	ngày, ban ngày
 dino	khủng long
 dead	chết, tắt
+
 deaf	điếc, làm thinh, làm ngơ
+
 deal with	giải quyết
+
 dear	thân, thân yêu, thân mến; kính thưa, thưa
+
 death	sự chết, cái chết
+
 debate	cuộc tranh luận, cuộc tranh cãi; tranh luận, bàn cãi
+
 decade	thế kỉ
 decay	tình trạng suy tàn, suy sụp, tình trạng đổ nát
+
 december	tháng mười hai, tháng chạp
+
 decline	sự suy tàn, sự suy sụp; suy sụp, suy tàn
+
 decorate	trang hoàng, trang trí
+
 earn	kiếm
+
 earth	đất, trái đất
+
 ease	sự thanh thản, sự thoải mái; làm thanh thản, làm yên tâm, làm dễ chịu
+
 easily	dễ dàng
+
 east	hướng đông, phía đông,  đông, ở phía đông
 eastern	đông
 easy	dễ dàng, dễ tính, ung dung
+
 eat	ăn
+
 economic	kinh tế
+
 economy	sự tiết kiệm, sự quản lý kinh tế
+
 edge	lưỡi, cạnh sắc
+
 edition	nhà xuất bản, sự xuất bản
+
 face	mặt, thể diện; đương đầu, đối phó, đối mặt
+
 facility	điều kiện dễ dàng, sự dễ dàng, thuận lợi
+
 fact	việc, sự việc, sự kiện
 factor	nhân tố
 factory	nhà máy, xí nghiệp, xưởng
@@ -183,6 +270,7 @@ each other	nhau, lẫn nhau
 penny	số tiền
 bored	chán nản
 wizard	ảo thuật
+
 bike	xe đạp
 blade	thanh kiếm
 gun	súng
@@ -238,6 +326,7 @@ genius	thiên tài
 basketball	bóng rổ
 football	bóng đá
 baseball	bosgn bầu dục
+volleyball bóng chuyền
 golf	chơi gôn
 goal	khung thành, bàn thắng
 ball	quả bóng
@@ -260,6 +349,7 @@ hunter	thợ săn
 lion	sư tử
 eagle	đại bàng
 shark	cá mập
+bull	bò tót
 buffalo	trâu
 tiger	hổ
 wolf	sói
@@ -283,3 +373,44 @@ movie	bộ phim
 birthday	sinh nhật
 doctor	bác sĩ
 panda	gấu trúc
+england	nước Anh
+france	nước Pháp
+italia	nước Ý
+spain	nước Tây Ban Nha
+china	tàu khựa
+japan	nước Nhật Bản
+korea	nước Hàn Quốc
+australia	nước Úc
+Austria	nước Áo
+Argentina	nước Ác-hen-ti-na
+belgium	nước Bỉ
+brazil	nước Bờ-ra-xin
+cambodia nước Campuchia
+cote d'ivoire	nước Bờ Biển Ngà
+czech repulic	cộng hòa Séc
+denmark	nước Đan Mạch
+egypt	Ai Cập
+finland	Phần Lan
+germany	nước Đức
+india Ấn Độ
+laos	nước Lào
+lebanon	Li Băng
+morrocco	Ma Rốc
+netherlands	Hà Lan
+north korea	Triều Tiên
+Norway	Na uy
+poland	Ba Lan
+portugal	Bồ Đào Nha
+russia	Nga
+saudi arabia	Ả rập Xê út
+serbia Séc bi
+south africa	CH Nam Phi
+sweden	Thụy Điển
+switzerland	Thụy Sĩ
+taiwan	Đài Loan
+thailand	Thái Lan
+timor-leste	Đông Ti mo
+turkey	Thổ Nhĩ Kì
+UAE	các tiểu vương quốc ả rập thống nhất
+uk	Vương Quốc Anh
+usa	Hoa Kì
