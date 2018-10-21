@@ -1,23 +1,29 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DictionaryManagement {
+    public void insertFromCommandline(){
+    	
+        System.out.println("Nhap so luong tu: ");
+        Scanner input = new Scanner(System.in);                 
+        String w_Target, w_Explain;
+        //nhap so luong tu
+        int numberOfWords = input.nextInt();                   
+        input.nextLine();
+        
+        for(int i = 0; i < numberOfWords; i ++) {
+            Word word = new Word();                           
+            //nhap tu moi
+            System.out.println("Word " + (i+1) +":");
+            w_Target = input.nextLine();
+            word.setWord_Taget(w_Target);
+            //nhap nghia
+            System.out.println("Explain");
+            w_Explain = input.nextLine();
+            word.setWord_Explain(w_Explain);
 
-	public ArrayList<Word> insertFrotmCommandline(){
-		ArrayList<Word> listWord= new ArrayList<Word>();
-		int n;
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Nhap so luong tu: ");
-		n=Integer.parseInt(sc.nextLine());
-		for (int i=0;i<n;i++) {
-			System.out.println("Nhap tu");
-			String word_target=sc.nextLine();
-			System.out.println("Nhap nghia");
-			String word_explain=sc.nextLine();
-			Word newWord=new Word();
-			listWord.add(newWord);
-		}
-		return listWord;
-	}
-	
+            Word newWord = new Word(w_Target, w_Explain);
+            Dictionary.dictionary.add(newWord);
+        }
+    }
+
 }
