@@ -20,7 +20,7 @@
             <Image url="@../images/43412299_308694663059179_3969036165075435520_n.png" />
          </image>
       </ImageView>
-      <TextField fx:id="search" layoutX="14.0" layoutY="131.0" onKeyTyped="#filterWord" onMouseClicked="#filterWord" prefHeight="29.0" prefWidth="205.0" promptText="search" />
+      <TextField fx:id="search" layoutX="12.0" layoutY="131.0" onKeyTyped="#filterWord" onMouseClicked="#filterWord" prefHeight="29.0" prefWidth="205.0" promptText="search" />
       <ListView fx:id="listview" layoutX="14.0" layoutY="182.0" onMouseClicked="#getSelectedList" prefHeight="323.0" prefWidth="205.0" />
       <WebView fx:id="webview" layoutX="263.0" layoutY="182.0" prefHeight="323.0" prefWidth="328.0" />
       <Button layoutX="475.0" layoutY="125.0" mnemonicParsing="false" onAction="#clickGoogleTranslate" prefHeight="31.0" prefWidth="77.0" style="-fx-background-color: white;">
@@ -63,5 +63,10 @@
                </image>
             </ImageView>
          </graphic></Button>
+      <ImageView fitHeight="29.0" fitWidth="37.0" layoutX="188.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kripto-search-b.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

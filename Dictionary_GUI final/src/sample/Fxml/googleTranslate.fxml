@@ -2,24 +2,45 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dictionary.ControllerGoogleTranslate">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dictionary.ControllerGoogleTranslate">
    <children>
-      <Label layoutX="166.0" layoutY="27.0" text="Google Translate" textFill="#e91b1b">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
-      <Button layoutX="74.0" layoutY="54.0" mnemonicParsing="false" onAction="#clickBackHome" text="Home" />
-      <ComboBox fx:id="SourceLanguage" layoutX="30.0" layoutY="109.0" onAction="#chooseSourceLanguage" prefWidth="150.0" promptText="Language" />
+      <Button layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickBackHome" prefHeight="66.0" prefWidth="58.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_246729.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ComboBox fx:id="SourceLanguage" layoutX="23.0" layoutY="109.0" onAction="#chooseSourceLanguage" prefHeight="25.0" prefWidth="157.0" promptText="Language" />
       <ComboBox fx:id="TargetLanguage" layoutX="301.0" layoutY="109.0" onAction="#chooseTargetLanguage" prefWidth="150.0" promptText="Language" />
-      <TextArea fx:id="sourceText" layoutX="37.0" layoutY="153.0" onDragDetected="#getSourceText" onKeyReleased="#getSourceText" prefHeight="200.0" prefWidth="200.0" />
-      <TextArea fx:id="targetText" layoutX="300.0" layoutY="153.0" prefHeight="200.0" prefWidth="200.0" />
-      <Button layoutX="180.0" layoutY="109.0" mnemonicParsing="false" onAction="#chooseSourceSpeech" text="speak" />
-      <Button layoutX="451.0" layoutY="109.0" mnemonicParsing="false" onAction="#chooseTargetSpeech" text="speak" />
+      <TextArea fx:id="sourceText" layoutX="23.0" layoutY="144.0" onDragDetected="#getSourceText" onKeyReleased="#getSourceText" prefHeight="200.0" prefWidth="187.0" />
+      <TextArea fx:id="targetText" layoutX="302.0" layoutY="144.0" prefHeight="200.0" prefWidth="175.0" />
+      <Button layoutX="181.0" layoutY="110.0" mnemonicParsing="false" onAction="#chooseSourceSpeech" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/speaker.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="451.0" layoutY="109.0" mnemonicParsing="false" onAction="#chooseTargetSpeech" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/speaker.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="63.0" fitWidth="150.0" layoutX="198.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/google-traductor-800x400.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

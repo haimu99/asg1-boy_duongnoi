@@ -17,9 +17,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("Fxml/sample.fxml"));
         Scene scene = new Scene(root);
-        //  scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-        primaryStage.getIcons().add(new Image("/sample/images/lingoes.jpg"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.getIcons().add(new Image("/sample/images/icon_Dictionary.png"));
+        primaryStage.setTitle("Hx2_Dictionary");
         CheckConnection();
         primaryStage.setScene(scene);
         primaryStage.show();

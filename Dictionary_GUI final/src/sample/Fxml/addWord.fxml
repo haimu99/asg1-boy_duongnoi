@@ -2,21 +2,37 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.HTMLEditor?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dictionary.ControllerAddWord">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dictionary.ControllerAddWord">
 <children>
-   <Button layoutX="56.0" layoutY="50.0" mnemonicParsing="false" onAction="#clickBackHome1" text="Home" />
+   <Button layoutX="4.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickBackHome1" prefHeight="67.0" prefWidth="105.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_246729.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
    <Text fill="#d1241d" layoutX="236.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Word " wrappingWidth="208.8033447265625">
       <font>
          <Font size="36.0" />
       </font>
    </Text>
-   <Button layoutX="27.0" layoutY="208.0" mnemonicParsing="false" onAction="#add" text="Confirm" textFill="#d1241d" />
-      <TextArea fx:id="Word" layoutX="12.0" layoutY="87.0" prefHeight="25.0" prefWidth="120.0" promptText="Enter Word" />
-      <HTMLEditor fx:id="Explain" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="139.0" layoutY="80.0" prefHeight="307.0" prefWidth="454.0" />
+   <Button layoutX="27.0" layoutY="208.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: white;" textFill="#d1241d">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/240_F_32348396_Nv04IX7djGAhB7YOuoWkKvRKvHu0kohx.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextArea fx:id="Word" layoutX="14.0" layoutY="98.0" prefHeight="25.0" prefWidth="120.0" promptText="Enter Word" />
+      <HTMLEditor fx:id="Explain" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="139.0" layoutY="80.0" prefHeight="307.0" prefWidth="454.0" style="-fx-background-color: white;" />
 </children>
 </AnchorPane>
