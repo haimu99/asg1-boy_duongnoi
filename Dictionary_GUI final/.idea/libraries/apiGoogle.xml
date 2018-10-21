@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="apiGoogle">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/apiGoogle.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
