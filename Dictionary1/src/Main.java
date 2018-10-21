@@ -1,9 +1,8 @@
-
 public class Main {
-	public static void main(String [] args) {
-		DictionaryCommandline word=new DictionaryCommandline();
-		word.dictionaryBasic();
-		
-	}
-
+    public static void main(String []args){
+    	
+        DictionaryCommandline test = new DictionaryCommandline();
+        test.dictionaryBasic();
+       
+    }
 }
