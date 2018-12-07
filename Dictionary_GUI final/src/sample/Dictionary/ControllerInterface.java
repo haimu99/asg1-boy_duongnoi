@@ -134,6 +134,7 @@ public class ControllerInterface extends ControllerGeneral implements Initializa
     public void initialize(URL url, ResourceBundle rb) {
         webEngine = webview.getEngine();
         showListView();
-        handleSelectEvent();    }
+        handleSelectEvent();
+    }
 
 }
